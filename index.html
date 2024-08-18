@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      body {
+        background-color: #d5e1ef;
+        font-family: "Outfit", sans-serif;
+        min-width: 320px;
+      }
+
+      .container {
+        box-sizing: border-box;
+        width: 320px;
+        height: 499px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 0 25px 25px rgb(100 100 100 /10%);
+      }
+
+      .container__image-box {
+        height: 288px;
+        width: 288px;
+      }
+
+      .container__image {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      .text {
+        margin-top: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+      }
+
+      .text__about-improve {
+        color: #1f314f;
+        margin: 0;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 120%;
+      }
+
+      .text__about-scan {
+        margin-top: 16px;
+        color: #68778d;
+        font-size: 15px;
+        line-height: 140%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__image-box">
+        <img
+          class="container__image"
+          src="./images/image-qr-code.png"
+          alt="pic whith QR code to visit Frontend Mentor"
+        />
+      </section>
+      <section class="text">
+        <p class="text__about-improve">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="text__about-scan">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
